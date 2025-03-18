@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,23 +6,28 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
-:root{
+
+:root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --text-color:#fff;
+    --text-color: #fff;
     --main-color: #0ef;
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-body{
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-.header{
+
+/* Header */
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,21 +38,129 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
-.logo{
-    font-size:2.5rem ;
+
+.logo {
+    font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .3s;
+    transition: 0.3s;
 }
-.navbar a:hover,
-.navbar a.acive {
+
+.navbar a:hover {
     color: var(--main-color);
+}
+
+#menu {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 10rem 9%;
+}
+
+/* Home Content */
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin: 2rem 0;
+}
+
+.social-media a {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-right: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--text-color);
+}
+
+/* Download Button */
+.btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+    background: var(--main-color);
+    color: #1f242d;
+    font-weight: 600;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0cc;
+}
+
+/* Home Image */
+.home-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px rgba(0, 238, 255, 0.5);
+}
+span{
+    color: var(--main-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 250px;
+        height: 250px;
+    }
 }
