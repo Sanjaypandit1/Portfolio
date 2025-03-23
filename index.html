@@ -13,10 +13,10 @@
   <body>
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
-      <i class="bx bx-menu" id="menu"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#home">Home</a>
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
@@ -56,7 +56,7 @@
 
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
+        <h3>Frontend Developer!</h3>
         <p>
           Hi, I'm Sanjay Pandit, a passionate Frontend Developer with a love for
           creating intuitive and engaging user experiences. With a strong
@@ -103,9 +103,11 @@
         </div>
     </div>
     </section>
+
     <section class="portfolio" id="portfolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
       
+      <div class="portfolio-container">
       <div class="portfolio-box">
         <a href="https://github.com/iam-rohan/product-insight-app" target="_blank">
           <img src="assets/ingredient.png" alt="Product Insight App" />
@@ -115,6 +117,7 @@
           <p>The Product Insight App is a React Native application designed to scan products, retrieve information, and provide feedback on ingredient safety.</p>
           <a href="https://github.com/iam-rohan/product-insight-app" target="_blank"><i class="bx bx-link-external"></i></a>
         </div>
+      </div>
       </div>
       
       <div class="portfolio-container">
@@ -154,43 +157,24 @@
       
       </section>
       
-    </section>
     <section class="contact" id="contact">
-      <h2 class="heading">Get In <span>Touch</span></h2>
-    
-      <div class="contact-container">
-        <!-- Left Side: Contact Information -->
-        <div class="contact-info">
-          <h3>Contact Details</h3>
-          <p><i class="bx bx-envelope"></i> Email: <a href="mailto:sanzaypandit22@gmail.com">sanzaypandit22@gmail.com</a></p>
-          <p><i class="bx bx-phone"></i> Phone: <a href="tel:+977-9804367278">+977-9804367278</a></p>
-          <p><i class="bx bx-map"></i> Location: Morang, Nepal</p>
-          
-          <div class="social-media">
-            <a href="https://github.com/Sanjaypandit1" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="https://www.linkedin.com/in/sanjay-pandit-766686244/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100025188161887" target="_blank"> <i class="bx bxl-facebook"></i></a>
-          </div>
-        </div>
-    
-        <!-- Right Side: Contact Form -->
-        <form action="#" class="contact-form">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="Email Address" required />
-          </div>
-          <div class="input-box">
-            <input type="tel" placeholder="Phone Number" />
-            <input type="text" placeholder="Subject" />
-          </div>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="email" placeholder="Enter Your Email Address">
       </div>
+      <div class="input-box">
+        <input type="number"placeholder="Enter Your Number">
+        <input type="text" placeholder="Subject">
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+
+    </form>
     </section>
     
-
-
     <footer class="footer">
       <div class="footer-text">
         <p>&copy; 2025 Sanjay Pandit All rights reserved.</p>
